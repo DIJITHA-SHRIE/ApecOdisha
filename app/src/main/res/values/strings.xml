@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ApcOdisha</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="district">Select District</string>
+    <string name="block">Select Block</string>
+    <string name="ngo">Select caste</string>
+    <string name="pg">Select Martial Status</string>
+    <string name="address">Address</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="name">Your Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="fname">Father\'s Name</string>
+    <string name="pnumber">Phone Number</string>
+    <string name="aadhar">Aadhar Number</string>
+    <string name="pan">PAN Number</string>
+    <string name="village">Enter Village</string>
+    <string name="gp">Enter Gram Panchayat</string>
+    <string name="cl">Enter Cultivating Land</string>
+
+    <string name="register">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="fp">Forgot Password ?</string>
+    <string name="nr">New Registration ?</string>
+</resources>
