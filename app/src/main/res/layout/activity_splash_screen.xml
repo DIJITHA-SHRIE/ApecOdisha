@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="APC Odisha \n Welcomes you"
+        android:text="AEPS Odisha \n Welcomes you"
         android:gravity="center"
         android:textSize="35sp"
         android:textColor="@color/colorPrimary"

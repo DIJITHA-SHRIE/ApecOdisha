@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ApcOdisha</string>
+    <string name="app_name">AepsOdisha</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
@@ -25,4 +25,9 @@
     <string name="login">Login</string>
     <string name="fp">Forgot Password ?</string>
     <string name="nr">New Registration ?</string>
+
+    //Instagram values
+    <string name="client_id">680474189223931</string>
+    <string name="callback_url">https://instagram.com/</string>
+    <string name="base_url">https://api.instagram.com/</string>
 </resources>
