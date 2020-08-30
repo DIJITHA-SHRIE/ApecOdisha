@@ -6,7 +6,7 @@
     <string name="district">Select District</string>
     <string name="block">Select Block</string>
     <string name="ngo">Select caste</string>
-    <string name="pg">Select Martial Status</string>
+    <string name="pg">Select Marital Status</string>
     <string name="address">Address</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -30,4 +30,9 @@
     <string name="client_id">680474189223931</string>
     <string name="callback_url">https://instagram.com/</string>
     <string name="base_url">https://api.instagram.com/</string>
+
+    <string-array name="maritalstatus">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
 </resources>

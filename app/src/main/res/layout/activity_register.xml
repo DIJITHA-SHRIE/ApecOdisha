@@ -44,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
+                android:id="@+id/aepsName"
                 android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,7 +95,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password_edit_text"
+                android:id="@+id/email_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -176,24 +177,27 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <RadioGroup
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_margin="10dp"
+            android:layout_gravity="center"
             >
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/male"
-                android:layout_alignParentLeft="true"/>
+                android:layout_marginRight="10dp"
+                />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/female"
-                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+
                 />
-        </RelativeLayout>
+        </RadioGroup>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -207,7 +211,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:ignore="LabelFor"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:id="@+id/district_aeps"/>
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -259,7 +264,7 @@
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/exam_dropdown"
+                android:id="@+id/marital_dropdown"
                 tools:ignore="LabelFor"
                 android:textColor="@color/white"/>
 
@@ -329,7 +334,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:id="@+id/aepsPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -345,6 +351,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
+            android:id="@+id/aepsConfrimPassword"
             android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 

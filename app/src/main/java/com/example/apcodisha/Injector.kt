@@ -5,7 +5,7 @@ import android.content.Context
 
 interface ViewModelFactoryProvider {
 
-    fun provideViewModelFactory(context: Context):RegistrationViewModelFactory
+    fun provideViewModelFactory(context: Context): RegistrationViewModelFactory
 
 }
 
@@ -13,18 +13,22 @@ interface ViewModelFactoryProvider {
 val Injector: ViewModelFactoryProvider
     get() = currentInjector
 
-@Volatile private var currentInjector: ViewModelFactoryProvider =
+@Volatile
+private var currentInjector: ViewModelFactoryProvider =
     DefaultViewModelProvider
 
-private object DefaultViewModelProvider: ViewModelFactoryProvider {
+private object DefaultViewModelProvider : ViewModelFactoryProvider {
     private fun getRegRepository(context: Context): RegistrationRepository {
         return RegistrationRepository.getInstance(
+            apecDao(context),
             RegService()
         )
     }
 
     private fun RegService() = NetworkService()
 
+    private fun apecDao(context: Context) =
+        AppDatabase.getInstance(context.applicationContext).apecDao()
 
 
     override fun provideViewModelFactory(context: Context): RegistrationViewModelFactory {
